@@ -1,5 +1,5 @@
 pkgname=zoom
-pkgver=5.11.0.3540
+pkgver=5.11.1.3595
 pkgrel=1
 pkgdesc="Video Conferencing and Web Conferencing Service"
 arch=('x86_64')
@@ -10,7 +10,7 @@ depends=('fontconfig' 'glib2' 'pulseaudio' 'libsm' 'libx11' 'libxcb' 'libxcompos
  'qt5-svg' 'qtwebengine' 'qt5-quickcontrols2')
 options=(!strip)
 source=("${pkgname}-${pkgver}_orig_x86_64.pkg.tar.xz"::"https://zoom.us/client/${pkgver}/zoom_x86_64.pkg.tar.xz")
-md5sums=('7e3d06d0837698718f037d189f292c75')
+md5sums=('1f53f6eb4b94f5337d9b3662a2425060')
 
 package() {
  cp -dpr --no-preserve=ownership opt usr "${pkgdir}"
